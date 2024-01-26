@@ -1,16 +1,11 @@
-import './App.css'
+import "./styles/App.css";
 
 function App() {
 
   return (
-    <>
-      
-      <h1>Vite + React</h1>
-      
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="w-full h-screen">
+     <h1 className="h-full flex flex-col justify-center m-auto font-bold">Eshopper</h1>
+    </div>
   )
 }
 
