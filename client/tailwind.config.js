@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      Roboto: ['Roboto', 'sans-serif'], // For body font styles
-      // Add other font styles as needed (e.g., heading, sans)
+      Roboto: ['Roboto', 'sans-serif'],
+      openSans: ['Open Sans', 'sans-serif'],
     },
   },
   plugins: [],
