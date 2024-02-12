@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Category from "./components/Category";
+import Products from "./components/Products";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Signup from './components/Signup';
 import Login from './components/Login';
+import Footer from './components/Footer';
 
 import "./styles/App.css";
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/home' element={<Home />} />
-          <Route path='/category' element={<Category />} />
+          <Route path='/products' element={<Products />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
@@ -24,6 +25,7 @@ function App() {
           <Route path='/signup' element={<Signup />}/>
           <Route path='/login' element={<Login />}/>
         </Routes>
+        <Footer />
       </Router>
     </div>
   )

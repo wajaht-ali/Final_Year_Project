@@ -9,6 +9,7 @@ export default {
     fontFamily: {
       Roboto: ['Roboto', 'sans-serif'],
       openSans: ['Open Sans', 'sans-serif'],
+      rounded: ['M PLUS Rounded 1c', 'sans-serif'],
     },
   },
   plugins: [],

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
-import { FaBars, FaTimes, FaVaadin } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 
 import img from '../assets/portfolioLogNoBg.png';
@@ -28,7 +28,7 @@ const Navbar = () => {
             <Link className='py-3 px-5 mx-4 active:bg-red-100 rounded-sm font-semibold' to={"/home"}>Home</Link>
           </li>
           <li>
-            <Link className='py-3 px-5 mx-4 active:bg-red-100 rounded-sm font-semibold' to={"/category"}>Category</Link>
+            <Link className='py-3 px-5 mx-4 active:bg-red-100 rounded-sm font-semibold' to={"/products"}>Products</Link>
           </li>
           <li>
             <Link className='py-3 px-5 mx-4 active:bg-red-100 rounded-sm font-semibold' to={"/about"}>About</Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="btns">
           {/* <Link to={"/signup"} className="bg-blue-600 text-white px-4 py-3 mx-auto rounded-md">SignUp / Login</Link> */}
           <Link to={"/signup"}>
-            <button className="bg-blue-600 text-white font-semibold font-openSans hover:bg-blue-500 hover:cursor-pointer active:bg-blue-800 rounded-md px-4 py-2">
+            <button className="bg-[#003459] text-white font-semibold font-openSans hover:bg-[#0b446c] hover:cursor-pointer active:bg-blue-800 rounded-md px-4 py-2">
               SignUp / Login
             </button>
           </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
             <Link onClick={handleClick} className='active:bg-red-100 font-semibold' to={"/home"}>Home</Link>
           </li>
           <li className='py-6 text-3xl cursor-pointer'>
-            <Link onClick={handleClick} className='active:bg-red-100 font-semibold' to={"/category"}>Category</Link>
+            <Link onClick={handleClick} className='active:bg-red-100 font-semibold' to={"/products"}>Products</Link>
           </li>
           <li className='py-6 text-3xl cursor-pointer'>
             <Link onClick={handleClick} className='active:bg-red-100 font-semibold' to={"/about"}>About</Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
           </li>
           <li className='py-6 text-xl cursor-pointer'>
             <Link onClick={handleClick} to={"/signup"}>
-              <button className="bg-blue-600 text-white font-semibold font-openSans hover:bg-blue-500 hover:cursor-pointer active:bg-blue-800 rounded-md px-4 py-2">
+              <button className="bg-[#003459] text-white font-semibold font-openSans hover:bg-[#0b446c] hover:cursor-pointer active:bg-blue-800 rounded-md px-4 py-2">
                 SignUp / Login
               </button>
             </Link>
