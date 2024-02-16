@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className='sticky top-0 w-full h-[80px] text-slate-950 flex flex-row justify-between items-center px-4 py-3 font-openSans bg-[#FCEED5]'>
 
       <div className="logo">
-        <Link to="./Home">
+        <Link to="/">
           <img src={img} width={"50px"} alt="myImage" className='cursor-pointer' />
         </Link>
       </div>
@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="navLinks hidden md:w-[70%] md:flex md:flex-row md:items-center justify-between">
         <ul className='w-auto flex flex-row items-center justify-around'>
           <li>
-            <Link className='py-3 px-5 mx-4 active:bg-red-100 rounded-sm font-semibold' to={"/home"}>Home</Link>
+            <Link className='py-3 px-5 mx-4 active:bg-red-100 rounded-sm font-semibold' to={"/"}>Home</Link>
           </li>
           <li>
             <Link className='py-3 px-5 mx-4 active:bg-red-100 rounded-sm font-semibold' to={"/products"}>Products</Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="btns">
           {/* <Link to={"/signup"} className="bg-blue-600 text-white px-4 py-3 mx-auto rounded-md">SignUp / Login</Link> */}
           <Link to={"/signup"}>
-            <button className="bg-[#003459] text-white font-semibold font-openSans hover:bg-[#0b446c] hover:cursor-pointer active:bg-blue-800 rounded-md px-4 py-2">
+            <button className="bg-[#0b446c] text-white font-semibold font-openSans hover:bg-[#1b6397] hover:cursor-pointer active:bg-blue-800 rounded-md px-4 py-2">
               SignUp / Login
             </button>
           </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
       <div className={!nav ? `hidden` : `absolute top-0 left-0 w-full h-screen flex flex-col justify-evenly items-center bg-gray-100 text-black font-openSans font-semibold`}>
         <ul className="h-full flex flex-col items-center justify-center">
           <li className='py-6 text-3xl cursor-pointer'>
-            <Link onClick={handleClick} className='active:bg-red-100 font-semibold' to={"/home"}>Home</Link>
+            <Link onClick={handleClick} className='active:bg-red-100 font-semibold' to={"/"}>Home</Link>
           </li>
           <li className='py-6 text-3xl cursor-pointer'>
             <Link onClick={handleClick} className='active:bg-red-100 font-semibold' to={"/products"}>Products</Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
           </li>
           <li className='py-6 text-xl cursor-pointer'>
             <Link onClick={handleClick} to={"/signup"}>
-              <button className="bg-[#003459] text-white font-semibold font-openSans hover:bg-[#0b446c] hover:cursor-pointer active:bg-blue-800 rounded-md px-4 py-2">
+              <button className="bg-[#0b446c] text-white font-semibold font-openSans hover:bg-[#0d4f7d] hover:cursor-pointer active:bg-blue-800 rounded-md px-4 py-2">
                 SignUp / Login
               </button>
             </Link>

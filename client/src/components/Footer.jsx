@@ -20,7 +20,7 @@ const Footer = () => {
           <div className='py-2 md:px-4'>
             <ul className="flex flex-row items-center justify-around">
               <li>
-                <Link className='p-2 mx-2 md:m-2 active:bg-red-100 rounded-sm font-semibold' to={"/home"}>Home</Link>
+                <Link className='p-2 mx-2 md:m-2 active:bg-red-100 rounded-sm font-semibold' to={"/"}>Home</Link>
               </li>
               <li>
                 <Link className='p-2 mx-2 md:m-2 active:bg-red-100 rounded-sm font-semibold' to={"/category"}>Category</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className='w-full border-b-2 border-gray-300 rounded-xl'></div>
         <div className="w-full flex flex-col md:flex-row items-center justify-between px-4 py-2 font-openSans text-md">
           <div className='my-2 block md:hidden'>
-            <Link to={"/home"}>
+            <Link to={"/"}>
               <img src={img} alt="myImage" width={"30px"} />
             </Link>
           </div>
